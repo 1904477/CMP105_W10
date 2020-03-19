@@ -4,9 +4,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 {
 	window = hwnd;
 	input = in;
-
 	// initialise game objects
-
 }
 
 Level::~Level()
@@ -30,7 +28,7 @@ void Level::update(float dt)
 void Level::render()
 {
 	beginDraw();
-
+	map.render(window);
 	endDraw();
 }
 
